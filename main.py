@@ -14,39 +14,22 @@
 
 
 import random
-def print_field(my_field):
-    print(' _ _ _')
-    for i in my_field:
-        c = ''
-        for b in i:
-            c += '|' + b
-        print(c + '|')
-
-
-
-def make_move(field, move, coo):
-    if field[(coo - 1) // 3][(coo - 1) % 3] == "_":
-        field[(coo - 1) // 3][(coo - 1) % 3] = move
-        return field, True
-    else:
-        return field, False
+#
 
 
 
 
 
-
-
-data = 'asd asd asd asd asd dsa dsa dsa dsa'
-data.lower
-dara = data.split(' ')
-answer = {}
-print(data)
-for i in data:
-    if i not in answer.keys():
-        answer[i] = data.count(i)
-print(answer)
-
+data = int(input("Input this: "))
+ch = 0
+while True:
+    if data % 2 == 0:
+        ch += 1
+        data= data / 2
+    if data % 2 != 0:
+        break
+    print(ch)
 
 
 
+#R.I.P. BY US
